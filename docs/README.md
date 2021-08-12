@@ -4,7 +4,7 @@ A simple CLI application that converts a markdown file to a Freeplane mind map f
 
 ## How to Use
 
-1. Download md-to-mm.exe from [here](https://github.com/unhurried/md-to-mm/raw/v1.0.0/build/md-to-mm.exe).
+1. Download md-to-mm.exe from [here](https://github.com/unhurried/md-to-mm/raw/v0.1.0/build/md-to-mm.exe).
 
 Currently, an executable file is provided only for Windows (.exe) in this project. For other platforms, please build by yourself.
 
@@ -19,7 +19,7 @@ Alternatively, you can drag and drop the input file onto the executable file.
 
 ### Example
 
-[example.md](./example.md) will be converted into [result.md](./result.md).
+[example.md](./example.md) will be converted into [result.mm](./result.mm).
 
 ![Example](./img/example.png)
 
