@@ -25,6 +25,12 @@ Alternatively, you can drag and drop the input file onto the executable file.
 
 ## How to Develop
 
+### Run the Application for Development
+
+```shell
+go run main.go
+```
+
 ### Build the Application
 
 ```shell
