@@ -25,6 +25,8 @@ Alternatively, you can drag and drop the input file onto the executable file.
 
 ## How to Develop
 
+Configuration for [devcontainer](https://code.visualstudio.com/docs/remote/containers) is included in .devcontainer directory.
+
 ### Run the Application for Development
 
 ```shell
@@ -36,9 +38,11 @@ go run main.go
 ```shell
 # It will generate md-to-mm.exe in build directory.
 go build -o build
+# To generate an executable for windows/amd64
+GOOS=windows GOARCH=amd64 go build -o build
 ```
 
 ### Frameworks and Libraries 
 
-* Golang 1.16
+* Golang 1.17
 * [blackfriday/v2](https://pkg.go.dev/github.com/russross/blackfriday/v2)
