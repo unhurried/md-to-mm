@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -20,7 +19,7 @@ func main() {
 	}
 	file := os.Args[1]
 
-	markdown, error := ioutil.ReadFile(file)
+	markdown, error := os.ReadFile(file)
 	if error != nil {
 		fmt.Println("Please specify a markdown file.")
 		os.Exit(1)
@@ -34,5 +33,5 @@ func main() {
 	markdown = []byte(strings.ReplaceAll(string(markdown), "\\", "\\\\"))
 	renderer := &freeplane.Renderer{}
 	output := blackfriday.Run(markdown, blackfriday.WithRenderer(renderer))
-	ioutil.WriteFile(targetPath, output, 0644)
+	os.WriteFile(targetPath, output, 0644)
 }
